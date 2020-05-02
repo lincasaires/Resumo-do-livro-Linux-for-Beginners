@@ -1,0 +1,55 @@
+Descrição
+
+	Muda os direitos de acesso (access rights ou file mode bits) rwx, que aparecem quando usamos o comando ls -l
+	r = read
+	w = write
+	x = execute
+	d = diretório
+		Os access rights são individuamente definidos para:
+		u = o proprietário do objeto
+		g = o grupo ao qual o objeto pertence
+		o = todos os outros usuários
+		a = todos os usuários [u,g,o]
+
+	$ls -l
+	Output:
+		-rw-r--r-- 1 lucas lucas   13 abr 29 20:11 CONTRIBUTING.md
+		-rw-r--r-- 1 lucas lucas   29 abr 28 20:56 LICENSE
+		drwxr-xr-x 2 lucas lucas 4096 abr 30 15:45 pastaTeste
+
+	>O primeiro caractere informa se é um diretório (d)
+	>Os próximos caracteres se dividem em 3 grupos de 3 caracteres (d rwx rwx rwx)
+		1. d: tipo de arquivo (diretório)
+		2. rwx: permissões do proprietário e/ou usuário (u);
+		3. rwx: permissões para usuários do mesmo grupo(g);
+		4. rwx: permissões para todos usuários(o);
+
+Sintaxe
+
+	chmod [ugoa][+-=][rwx] file(s)/directory(ies)
+	Exemplo:
+	chmod go+w teste.txt
+
+
+Mais 
+
+	O que significa chmod 755?
+
+	0 : --- (nenhuma permissão)
+	1 : --x (somente execução)
+	2 : -w- (somente escrita)
+	3 : -wx (escrita e execução)
+	4 : r-- (somente leitura)
+	5 : r-x (leitura e execução)
+	6 : rw- (leitura e escrita)
+	7 : rwx (leitura, escrita e execução) 
+
+	$chmod 755 file.ext
+	$ls -l file.ext
+	-rwxr-xr-x
+	
+	Macete: 421 = r--, w--, x--
+			-wx = 2+1 = 3
+			r-x = 4+1 = 5
+			rw- = 4+2 = 6
+			rwx = 4+2+1 = 7

@@ -1,0 +1,15 @@
+Descrição
+	
+	Copia arquivos do hostlocal pro host externo e vice-versa
+
+Sintaxe
+
+	File local  ->  File remoto
+		$scp (-4) file1 username@hostname:file2 (Copia file1[local] para o file 2[host externo])
+ 	
+	File remoto -> File local
+ 		$scp (-4) username@hostname:file2 file1 (Copia file2[host externo] para file1[local])
+ 	
+ 	$scp -r ... (copia arquivos recursivamente[files internos])
+
+ 	Nota: (-4) é para forçar conexão IPv4 caso a IPv6 não funcione

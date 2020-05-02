@@ -1,0 +1,29 @@
+Unix
+>Cada usuário tem seu próprio ambiente (home directory,shell).
+>O usuário é identificado pelo user ID (UID) e pelo group ID (GID).
+>Há dois tipos de usuário, o normal e o administrador do sistema (root)
+>GNOME e KDE são ambientes graficos
+>Em Unix, tudo é arquivo, os file-system objects são:
+	•‘normal’: (text-) files
+	•executable files: (binary files or shell scripts)•directories
+	•device files
+	•pipes
+	•symbolic or hardlinks(references to files)
+
+	O sistema de arquivos Unix não faz distinção entre diferentes drives. Todos os dispositivos físicos são denotados em algum diretório (comunmente em /dev)
+
+>shell é um programa específico que lida com a interpretação de imput commands
+>Os principais access rights ou file mode bits são:
+	r = read
+	w = write
+	x = execute
+	d = diretório
+	Os access rights são individuamente definidos para:
+		u = o proprietário do objeto
+		g = o grupo ao qual o objeto pertence
+		o = todos os outros usuários
+		a = todos os usuários
+		VEJA chmod
+
+
+  

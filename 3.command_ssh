@@ -1,0 +1,22 @@
+Trabalhando em terminais externos
+
+	Para se conectar a um host distante, um tem que ceder o IP address.
+
+	Para se conectar a um host de uma rede local, o hostname  é suficiente.
+
+	Para estabelecer a conexão e encriptar dados transmitidos, um tem que usar exclusivamente os "secure" commands.
+
+   >Evite ftp e use sftp
+
+Descrição
+	
+	Habilita a conexão a um host escolhido que pode ser localizado pelo IP address. Ctrl+D, exit ou logout para desconectar
+
+Sintaxe
+
+	ssh (-4) -X -l username hostname
+	ssh (-4) -X username@hostname
+
+	(-4) = Forçar conexão IPv4 se a IPv6 não funcionar
+
+	-X = necessário para alguns hosts 

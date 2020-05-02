@@ -1,0 +1,8 @@
+$passwd (trocar password)
+$who (mostra informações sobre todos os usuários logados [nome  :terminal  horário de login)
+$pwd (mostra diretório atual)
+$mv <nome antigo> <novo nome> (altera o nome do file)
+	<nome_file> <dir> (recorta e cola)
+$ls -R (lista o conteúdo dos diretórios presentes)
+$rmdir (remove diretórios vazios)
+$cp <file1> <file2> <file3> <dir> (copia os files expecificados no diretório expecificado)

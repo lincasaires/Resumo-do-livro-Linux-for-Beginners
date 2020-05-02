@@ -1,0 +1,23 @@
+Descrição:
+	Mostra um manual sobre os comandos, contendo:
+
+	•NAME: command and purpose
+	•SYNOPSIS: syntax of command
+	•DESCRIPTION: of command effect
+	•FILES: which are modified and/or needed
+	•OPTIONS: if present
+	•EXAMPLE: (S)for application (rarely)
+	•BUGS: errors, if known
+	•SEE ALSO: other commands in the same context
+
+Syntax:
+	$man <command> (Mostra informações sobre o comando especificado)
+
+	$man -k <expression> (Encontra páginas man contendo a expressão desejada na seção de nomes "NAME")
+
+	$man --help (Mais opções man)
+
+Exemplos:
+	$man xterm
+	$man ls
+
