@@ -1,0 +1,27 @@
+g++ (compilador GNU C++, linker incluso)
+
+
+Sintaxe
+
+	g++ [-c] [-g] [-O] <file.cpp> [-o <nome-executável>]
+
+		-o (para dar nome ao executável)
+		-c (só compilar, sem linkar)
+		-g (necessário para debug, inclui debug information)
+		-O (otimização)
+
+Exemplo
+
+	$g++ -c hello.cpp (compila e cria um arquivo chamado hello.o)
+	$g++ hello.o -o hello (cria um executável [link] chamado hello a partir do arquivo compilado hello.o)
+	$./hello
+		>hello world
+
+	$g++ hello.cpp (compila e linka direto, criando o arquivo "a.out" por padrão)
+	$./a.out
+		>hello world
+
+
+gdb (debugger)
+	
+	$gdb hello

@@ -1,0 +1,24 @@
+Output ">" e ">>"
+	
+	Estes comandos redirecionam o output para outro local que não sejam a tela, como um arquivo.txt por exemplo
+
+	Exemplo:
+		$cat <file1> > <file2> (conteúdo do file1 vai pro file2)
+		$cat <file1> >> <file2> (concatena)
+
+
+Input "<"
+
+		$mail -s "Testando123" lucasairesgodinho1@gmail.com < README
+
+		$cat < README
+
+
+Pipes "|"
+
+	Pode fazer o output de um comando se tornar o input de outro comando / combina comandos
+
+	Exemplo:
+		$ls | grep <filename>
+		$ls | grep <string> <filename> (filtra lista ls)
+		

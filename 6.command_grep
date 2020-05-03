@@ -1,0 +1,39 @@
+Descrição
+
+	Pesquisa expressões regulares (regex) nos arquivos especificados, trazendo a linha inteira
+
+
+
+Sintáxe
+
+	grep [options] <regex> <arquivo>
+
+	Opções importantes:
+		-i (ignora distinções entre maiúsculas e minúsculas)
+		-n (exibe em qual linha foi encontrado)
+		-r (busca recursiva)
+		-E (para regex extendidas como (p1|p2))
+			Obs
+			egrep = grep -E (recomendado)
+
+
+
+Expressões regulares(regex)
+	
+	^ (linhas que começam com...)
+	[] (conjunto)
+			ex: ^[a-z] (linhas que começam com "a" a "z" minúsculas)
+	palavra$ ($ simboliza o final da linha)
+	(palavra1|palavra2) (palavra1 ou palavra2. Obs: é uma expressão regular extendida)
+
+
+
+Exemplos
+	
+	$grep [fF] <file> (Encontra todas as ocorrências da letra f ou F)
+	$grep [a-z]ucas <file> (encontra palavras que começao com "a" a "z" e terminam com "ucas")
+	$grep cavalo$ <file> (encontra a palavra "cavalo" desde que esta esteja no final da linha)
+	$grep -E (root|lucas) <file> ("root" ou "lucas")
+
+	$ls -l <diretório> | grep log (lista files do diretório, apenas files que contém "log" no nome)
+

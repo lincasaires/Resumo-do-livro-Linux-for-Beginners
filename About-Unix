@@ -1,4 +1,6 @@
 Unix
+
+user@localhost
 >Cada usuário tem seu próprio ambiente (home directory,shell).
 >O usuário é identificado pelo user ID (UID) e pelo group ID (GID).
 >Há dois tipos de usuário, o normal e o administrador do sistema (root)
@@ -12,7 +14,10 @@ Unix
 
 	O sistema de arquivos Unix não faz distinção entre diferentes drives. Todos os dispositivos físicos são denotados em algum diretório (comunmente em /dev)
 
->shell é um programa específico que lida com a interpretação de imput commands
+>shell é um programa de serviço específico que lida com a interpretação de imput commands e é por onde o usuário se comunica com o OS.
+>Bash é um exemplo de shell
+>Cada shell contém um conjunto de variáveis do sistema que compreendem o ambiente de processos para programas executados no shell
+>Shell scripts são pequenos programas que se comportam como comandos UNIX, mas que estão em forma de texto
 >Os principais access rights ou file mode bits são:
 	r = read
 	w = write
@@ -25,5 +30,6 @@ Unix
 		a = todos os usuários
 		VEJA chmod
 
-
+>PID é process ID e PPID é parent process ID, esses IDs são únicos
+>
   
